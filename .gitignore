@@ -1,0 +1,6 @@
+depth_results/
+checkpoints/
+__pycache__/
+results/
+!.gitkeep
+assets/my_examples/

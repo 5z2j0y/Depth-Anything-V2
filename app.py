@@ -30,7 +30,7 @@ model_configs = {
     'vitl': {'encoder': 'vitl', 'features': 256, 'out_channels': [256, 512, 1024, 1024]},
     'vitg': {'encoder': 'vitg', 'features': 384, 'out_channels': [1536, 1536, 1536, 1536]}
 }
-encoder = 'vitl'
+encoder = 'vits'
 model = DepthAnythingV2(**model_configs[encoder])
 state_dict = torch.load(f'checkpoints/depth_anything_v2_{encoder}.pth', map_location="cpu")
 model.load_state_dict(state_dict)
